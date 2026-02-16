@@ -1,0 +1,1 @@
+To run this program with Visual Studio, you need the OS, Discord Request, and Random libraries. You can add memes as you like, but the folder containing the memes must be named "images" because the program is designed for that purpose.
