@@ -67,3 +67,13 @@ async def mem(ctx):
         picture = discord.File(f)
    # Daha sonra bu dosyayı bir parametre olarak gönderebiliriz!
     await ctx.send(file=picture)
+
+
+@bot.command("animals")
+async def mem(ctx):
+    img_name = random.choice(os.listdir("animals"))
+    with open(f'animals/{img_name}', 'rb') as f:
+        # Dönüştürülen Discord kütüphane dosyasını bu değişkende saklayalım!
+        picture = discord.File(f)
+   # Daha sonra bu dosyayı bir parametre olarak gönderebiliriz!
+    await ctx.send(file=picture)
